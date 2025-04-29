@@ -4,31 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Create and share hilarious memes with our easy-to-use meme generator. Click to generate memes instantly and share the fun with friends!">
-    <title>MEME GENARETOR</title>
+    <title>Meme Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Welcome to my meme generator website</h1>
-    <nav>
-        <!-- custom,search by genare, -->
-    </nav>
-
-    <p>click here to generate meme⬇️</p>
-    <div class="meme-generator">
-            <button class="meme-button" aria-label="Generate Memes" tabindex="0">GENERATE MEMES
-
+    <div class="container">
+        <h1>Welcome to My Meme Generator</h1>
+        
+        <p id="subHead"><span>⬇️</span>
+            Click here to generate a meme
+            <span>⬇️</span></p>
+        
+        <div class="meme-generator">
+            <button class="meme-button" aria-label="Generate Memes" tabindex="0">
+                Generate Meme
             </button>
-    </div>
-    <div class="loadingClass">
-        <h2 id="loading" tabindex="0">Loading....</h2>
-    </div>
-    <div class="gen-meme">
-        <div class="meme-result" tabindex="0">
-            <img class="memeImage" src=""alt="the meme" />
-            <!-- web3-memes-1.jpg -->
-                
+        </div>
+
+        <div class="loadingClass" role="alert" aria-live="polite">
+            <h2 id="loading">Loading...</h2>
+        </div>
+
+        <div class="title" aria-live="polite">
+            <h2 id="title"></h2>
+        </div>
+
+        <div class="gen-meme">
+            <div class="meme-result">
+                <img class="memeImage" src="" alt="Generated meme" />
+            </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Meme Generator</p>
+            <hr />
+            <p class="creator">Created by Manab Biswas</p>
+            <div class="social-links">
+                <a href="https://github.com/ManabBiswas" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/manab-biswas-354207291" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://instagram.com/manabbiswas108" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://facebook.com/manabbiswas" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script> 
 </body>
 </html>
